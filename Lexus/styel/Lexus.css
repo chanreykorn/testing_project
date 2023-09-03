@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background: #202124;
+}
+.container{
+    width: 100%;
+    height: auto;
+    background: #202124;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.container_center{
+    width: 80%;
+    height: auto;
+    /* background: #fff; */
+    background: #202124;
+}
+
+/* <!-- navigation bar --> */
+.navigation{
+    height: 100px;
+    justify-content: space-between;
+    display: flex;
+    /* background: #dddddd; */
+    background: #202124;
+}
+.navigation .logo{
+    font-size: 50px;
+    font-weight: bold;
+    color: #ddd;
+    line-height: 100px;
+}
+.navigation ul{
+    display: flex;
+    line-height: 100px;
+    list-style-type: none;
+    gap: 50px;
+}
+.navigation ul li a{
+    color: #ddd;
+    text-decoration: none;
+    font-size: 18px;
+}
+.navigation .navigation_bar{
+    font-size: 30px;
+    line-height: 100px;
+    color: #ddd;
+    display: none;
+}
+
+/* dropdown menu */
+.dropdown{
+    width: 80%;
+    height: 50vh;
+    background: #dddddd;
+    position: absolute;
+    display: none;
+}
+.dropdown .dropdown_menu{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 50vh;
+    text-align: center;
+}
+.dropdown_menu ul{
+    list-style: none;
+    line-height: 60px;
+}
+.dropdown_menu ul li a{
+    text-decoration: none;
+}
+.dropdown_menu .fa-circle-xmark{
+    font-size: 40px;
+}
+
+/* <!-- Munu Heading --> */
+.munu{
+    height: 50px;
+    width: 100%;
+    background: #202124;
+}
+.munu ul{
+    display: flex;
+    gap: 50px;
+    list-style-type: none;
+    line-height: 50px;
+}
+.munu ul li a{
+    text-decoration: none;
+    color: #ddd;
+}
+
+/* <!-- Form products cars --> */
+.container .box-store{
+    /* width: 90%; */
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+.box{
+    width: 350px;
+    height: auto;
+    background: #f5f2f2;
+    margin: 20px 20px;
+    border-radius: 10px;
+    
+}
+.box .box-img img{
+    width: 350px;
+    border-radius: 10px 10px 0px 0px;
+}
+.box .tital p{
+    font-size: 18px;
+    font-family: 'Chenla', cursive;
+    font-family: 'PT Sans', sans-serif;
+    margin: 5px 20px;
+}
+.box .price-all {
+    justify-content: space-between ;
+    display: flex;
+    margin-top: 5px;
+}
+.model{
+    font-size: 18px;
+    margin: 0px 20px;
+}
+.box .price-all .price{
+    margin: 0px 20px;
+}
+.box .btn{
+    justify-content: space-between;
+    display: flex;
+    padding: 0px 20px;
+}
+.box .btn button{
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    background: #212024;
+    color:#fff;
+    width: 160px;
+    height: 30px;
+    margin: 10px 0;
+    cursor: pointer;
+}
+.box .btn button:hover{
+    background: none;
+    color:#000000;
+    border: 1px solid;
+}
+.box .btn .fa-heart{
+    margin: 10px 0;
+}
+.footer{
+    width: 100%;
+    height: 50vh;
+    background: #212024;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: #ddd;
+}
+.form-footer{
+    width: 400px;
+    height: auto;
+    /* background: #ddd; */
+}
+.tital-header-footer{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 900;
+}
+.full-tital{
+    text-align: center;
+}
+.tital-header-caption p{
+    font-size: 18px;
+}
+.icon{
+    text-align: center;
+}
+.fa-facebook,
+.fa-twitter,
+.fa-google-plus-g,
+.fa-youtube,
+.fa-linkedin{
+    font-size: 20px;
+    margin: 10px 0;
+}
+.professional{
+    text-align: center;
+}
+
+
+
+
+@media only screen and (max-width: 500px) and (min-width: 375px) {
+    .container_center{
+        width: 100%;
+    }
+    .navigation .logo{
+        font-size: 40px;
+        padding: 0 30px;
+    }
+    .navigation .navigation_bar{
+        display: block;
+        padding: 0 30px;
+    }
+    .navigation ul{
+        display: none;
+    }
+    .dropdown.active{
+        display: block;
+        width: 100%;
+    }
+    .munu{
+        height: 50px;
+        width: 100%;
+        background: #000000;
+    }
+    .munu ul{
+        overflow: hidden;
+        overflow-x: visible;
+        overflow-x: scroll;
+        padding: 0 15px;
+    }
+}
